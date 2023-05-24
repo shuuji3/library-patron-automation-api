@@ -33,6 +33,8 @@ export const bunkyoLibrary: Library = {
 
         await page.getByRole('button', { name: '送信' }).click()
 
+        context.libraryState.isLogin = true
+
         return context
       },
     },
